@@ -12,12 +12,12 @@ class DeviceScanner:
         self.ips = list(map(lambda v: format(v), ipaddress.IPv4Network(ip_mask)))
 
     def persist(self, device_ips):
-        with open('/tmp/.devices_found', 'w', encoding="UTF-8") as f:
+        with open('.devices_found', 'w', encoding="UTF-8") as f:
             f.write(",".join(device_ips))
 
     def load(self):
         try:
-            with open('/tmp/.devices_found', 'r', encoding="UTF-8") as f:
+            with open('.devices_found', 'r', encoding="UTF-8") as f:
                 return list(filter(len, f.read().split(",")))
         except Exception:
             return []

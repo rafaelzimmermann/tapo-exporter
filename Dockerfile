@@ -22,4 +22,4 @@ ENV TAPO_PASSWORD="tplink_password"
 ENV TAPO_ADDRESS="192.168.1.0/24"
 
 # Run the Flask application
-CMD ["python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=9100"]
+CMD ["python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000"]

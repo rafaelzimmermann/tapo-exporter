@@ -1,3 +1,5 @@
 .env
 run*.sh
 **/*.pyc
+
+.devices_found
