@@ -11,7 +11,7 @@ docker run \
     --env TAPO_USERNAME="tplink_username" \
     --env TAPO_PASSWORD="tplink_password" \
     --env TAPO_ADDRESS="192.168.0.42" \
-    -p 9100:9100 \
+    -p 5000:5000 \
     tapo-exporter
 ```
 
